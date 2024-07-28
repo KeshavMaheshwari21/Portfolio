@@ -1,0 +1,189 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<style>
+   /* styles.css */
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.masthead {
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.masthead h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.masthead p {
+    font-size: 1.5rem;
+}
+
+.projects {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive styles */
+
+@media (max-width: 767px) {
+    .masthead {
+        height: 50vh;
+    }
+    .project {
+        margin-bottom: 10px;
+    }
+    .project img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 479px) {
+    .masthead {
+        height: 30vh;
+    }
+    .project {
+        margin-bottom: 5px;
+    }
+    .project img {
+        height: 100px;
+    }
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Keshav Maheshwari</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5000">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/KeshavMaheshwari21" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/keshav-maheshwari-a34933278/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="projects" class="container mt-5">
+        <h1>Projects :-</h1>
+
+        <div style="display: flex;">
+            <div style="width: 800px;">
+              <h3 style="margin-left: 50px;margin-top: 25px;"><b>Railway Reservation System :</b></h3>
+              <p style="margin-left: 50px;margin-right: 100px;">
+                The Railway Reservation System is a web-based application designed to simplify the process of booking train tickets online. Built using HTML, CSS, and modern frontend technologies, this user-friendly system provides a seamless experience for passengers to search, book, and manage their train tickets.
+                <br><br>
+With a responsive and intuitive interface, users can easily search for trains, check availability, and book tickets in just a few clicks. The system also allows users to view their booking history, cancel or modify reservations, and access important travel information.
+              </p>
+            </div>
+          </div>
+          
+          <div style="display: flex;">
+            <div style="width: 800px;">
+              <h3 style="margin-left: 50px;margin-top: 25px;"><b>Cli Based Chat Application :</b></h3>
+              <p style="margin-left: 50px;margin-right: 100px;">
+                ChatCLI is a command-line interface (CLI) based chat application that allows users to communicate with each other in real-time. Built using [programming language/framework], this lightweight and efficient chat app provides a simple and intuitive way to connect with friends, family, and colleagues.
+                <br><br>
+                With ChatCLI, users can send and receive messages, share files, and even participate in group conversations - all from the comfort of their terminal. No GUI required! Whether you're a developer, a power user, or just someone who loves the simplicity of the command line, ChatCLI is the perfect solution for your chat needs
+            </p>
+            </div>
+          </div>
+    </section>
+
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="container">
+            <p>&copy; 2023 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+               
